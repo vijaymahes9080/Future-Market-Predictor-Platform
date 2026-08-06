@@ -89,14 +89,14 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center space-x-4">
           <button
             onClick={() => setIsAutoUpdating(!isAutoUpdating)}
-            className={`flex items-center space-x-1.5 px-2.5 py-0.5 rounded text-xs transition-colors ${
+            className={`flex items-center space-x-1.5 px-3 py-1 rounded text-xs font-bold transition-all ${
               isAutoUpdating 
-                ? 'bg-emerald-950/60 text-emerald-300 border border-emerald-800/50' 
-                : 'bg-slate-800 text-slate-400'
+                ? 'bg-gradient-to-r from-emerald-950 to-indigo-950 text-emerald-300 border border-emerald-500/50 shadow-md shadow-emerald-500/20' 
+                : 'bg-slate-800 text-slate-400 border border-slate-700'
             }`}
           >
             <span className={`w-2 h-2 rounded-full ${isAutoUpdating ? 'bg-emerald-400 animate-ping' : 'bg-slate-500'}`} />
-            <span>{isAutoUpdating ? 'Live Stream Active' : 'Stream Paused'}</span>
+            <span>{isAutoUpdating ? '⚡ ALL LOOP MODE ACTIVE' : 'Stream Paused'}</span>
           </button>
         </div>
       </div>

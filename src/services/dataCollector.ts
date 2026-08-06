@@ -27,17 +27,21 @@ export class DataCollectorService {
 
   public simulateLiveStreamUpdate(): GlobalDataSource[] {
     this.sources = this.sources.map(src => {
-      const deltaPoints = Math.floor((Math.random() - 0.4) * 200);
-      const newPoints = Math.max(100, src.dataPointsPerMin + deltaPoints);
-      const newWeakSignals = Math.max(5, src.weakSignalsCount + (Math.random() > 0.7 ? 1 : 0));
+      const deltaPoints = Math.floor((Math.random() - 0.45) * 350);
+      const newPoints = Math.max(150, src.dataPointsPerMin + deltaPoints);
+      const newWeakSignals = src.weakSignalsCount + (Math.random() > 0.65 ? 1 : 0);
+      const statuses: GlobalDataSource['status'][] = ['Active Live Stream', 'Synced', 'High Velocity', 'Processing'];
+      const newStatus = Math.random() > 0.85 ? statuses[Math.floor(Math.random() * statuses.length)] : src.status;
+
       return {
         ...src,
         dataPointsPerMin: newPoints,
         weakSignalsCount: newWeakSignals,
+        status: newStatus,
         lastSync: 'Just now'
       };
     });
-    return this.sources;
+    return [...this.sources];
   }
 }
 
