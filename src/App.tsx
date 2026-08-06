@@ -12,6 +12,7 @@ import { ScenarioSimulatorView } from './components/ScenarioSimulatorView';
 import { PatentMinerView } from './components/PatentMinerView';
 import { VentureStudioView } from './components/VentureStudioView';
 import { InteractiveTimelineView } from './components/InteractiveTimelineView';
+import { AgentSandboxView } from './components/AgentSandboxView';
 import { FutureJobsDashboard } from './components/FutureJobsDashboard';
 import { BusinessOpportunityDashboard } from './components/BusinessOpportunityDashboard';
 import { InvestmentIntelligence } from './components/InvestmentIntelligence';
@@ -120,6 +121,10 @@ export function App() {
 
         {activeTab === 'tech-timeline' && (
           <InteractiveTimelineView technologies={technologies} />
+        )}
+
+        {activeTab === 'agent-sandbox' && (
+          <AgentSandboxView agents={agents} />
         )}
 
         {activeTab === 'future-jobs' && (

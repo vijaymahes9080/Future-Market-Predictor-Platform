@@ -21,6 +21,7 @@ export type ActiveTab =
   | 'patent-radar'
   | 'venture-studio'
   | 'tech-timeline'
+  | 'agent-sandbox'
   | 'future-jobs' 
   | 'business-opps' 
   | 'investments' 
@@ -58,6 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'patent-radar', label: 'Patent Radar', icon: Database },
     { id: 'venture-studio', label: 'Venture Studio', icon: Lightbulb },
     { id: 'tech-timeline', label: '2026-35 Roadmap', icon: Radio },
+    { id: 'agent-sandbox', label: 'Agent Sandbox', icon: Cpu },
     { id: 'future-jobs', label: 'Future Jobs', icon: Briefcase },
     { id: 'business-opps', label: 'Startup Matrix', icon: Lightbulb },
     { id: 'investments', label: 'VC & Funding', icon: TrendingUp },
