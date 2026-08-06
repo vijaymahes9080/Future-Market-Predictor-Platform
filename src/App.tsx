@@ -13,6 +13,7 @@ import { PatentMinerView } from './components/PatentMinerView';
 import { VentureStudioView } from './components/VentureStudioView';
 import { InteractiveTimelineView } from './components/InteractiveTimelineView';
 import { AgentSandboxView } from './components/AgentSandboxView';
+import { GlobalHeatmapView } from './components/GlobalHeatmapView';
 import { FutureJobsDashboard } from './components/FutureJobsDashboard';
 import { BusinessOpportunityDashboard } from './components/BusinessOpportunityDashboard';
 import { InvestmentIntelligence } from './components/InvestmentIntelligence';
@@ -125,6 +126,10 @@ export function App() {
 
         {activeTab === 'agent-sandbox' && (
           <AgentSandboxView agents={agents} />
+        )}
+
+        {activeTab === 'global-heatmap' && (
+          <GlobalHeatmapView />
         )}
 
         {activeTab === 'future-jobs' && (
