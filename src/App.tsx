@@ -4,9 +4,11 @@ import { MOCK_TECHNOLOGIES, MOCK_BUSINESS_OPPORTUNITIES, MOCK_FUTURE_JOBS, MOCK_
 import { dataCollectorService } from './services/dataCollector';
 import { agentNetworkService } from './services/agentNetwork';
 import { reportGeneratorService } from './services/reportGenerator';
+import { scenarioSimulatorService } from './services/scenarioSimulator';
 import { Header, ActiveTab } from './components/Header';
 import { DashboardOverview } from './components/DashboardOverview';
 import { TechExplorer } from './components/TechExplorer';
+import { ScenarioSimulatorView } from './components/ScenarioSimulatorView';
 import { FutureJobsDashboard } from './components/FutureJobsDashboard';
 import { BusinessOpportunityDashboard } from './components/BusinessOpportunityDashboard';
 import { InvestmentIntelligence } from './components/InvestmentIntelligence';
@@ -56,6 +58,10 @@ export function App() {
     setAgents(agentNetworkService.simulateAgentStep());
   };
 
+  const handleRunSimulation = (scenarioId: string) => {
+    setTechnologies(scenarioSimulatorService.simulateScenarioRipple(scenarioId, technologies));
+  };
+
   const totalDataRate = dataCollectorService.getTotalDataPointsPerMinute();
   const weakSignalsCount = dataCollectorService.getTotalWeakSignals();
 
@@ -92,6 +98,12 @@ export function App() {
             searchQuery={searchQuery}
             selectedTech={selectedTech}
             setSelectedTech={setSelectedTech}
+          />
+        )}
+
+        {activeTab === 'scenario-simulator' && (
+          <ScenarioSimulatorView
+            onRunSimulation={handleRunSimulation}
           />
         )}
 

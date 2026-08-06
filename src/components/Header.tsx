@@ -17,6 +17,7 @@ import {
 export type ActiveTab = 
   | 'overview' 
   | 'tech-explorer' 
+  | 'scenario-simulator'
   | 'future-jobs' 
   | 'business-opps' 
   | 'investments' 
@@ -50,6 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
   const tabs = [
     { id: 'overview', label: 'Command Center', icon: Activity },
     { id: 'tech-explorer', label: 'Tech Deep-Dives', icon: BrainCircuit },
+    { id: 'scenario-simulator', label: 'War Games AI', icon: Sparkles },
     { id: 'future-jobs', label: 'Future Jobs', icon: Briefcase },
     { id: 'business-opps', label: 'Startup Matrix', icon: Lightbulb },
     { id: 'investments', label: 'VC & Funding', icon: TrendingUp },
