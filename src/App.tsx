@@ -11,6 +11,7 @@ import { TechExplorer } from './components/TechExplorer';
 import { ScenarioSimulatorView } from './components/ScenarioSimulatorView';
 import { PatentMinerView } from './components/PatentMinerView';
 import { VentureStudioView } from './components/VentureStudioView';
+import { InteractiveTimelineView } from './components/InteractiveTimelineView';
 import { FutureJobsDashboard } from './components/FutureJobsDashboard';
 import { BusinessOpportunityDashboard } from './components/BusinessOpportunityDashboard';
 import { InvestmentIntelligence } from './components/InvestmentIntelligence';
@@ -115,6 +116,10 @@ export function App() {
 
         {activeTab === 'venture-studio' && (
           <VentureStudioView opportunities={opportunities} />
+        )}
+
+        {activeTab === 'tech-timeline' && (
+          <InteractiveTimelineView technologies={technologies} />
         )}
 
         {activeTab === 'future-jobs' && (
