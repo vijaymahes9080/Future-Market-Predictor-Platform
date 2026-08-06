@@ -4,10 +4,12 @@
 [![React](https://img.shields.io/badge/React-18.2-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.1-646cff.svg)](https://vitejs.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178c6.svg)](https://www.typescriptlang.org/)
-[![AI-Agents](https://img.shields.io/badge/AI--Agents-10%20Autonomous%20Swarm-indigo.svg)](#10-specialized-ai-agents)
-[![Data-Feeds](https://img.shields.io/badge/Data%20Streams-50%20Global%20Pipelines-emerald.svg)](#50-global-data-source-ingestion-pipelines)
+[![AI-Agents](https://img.shields.io/badge/AI--Agents-10%20Autonomous%20Swarm-indigo.svg)](#3--10-specialized-autonomous-ai-agents)
+[![Data-Feeds](https://img.shields.io/badge/Data%20Streams-50%20Global%20Pipelines-emerald.svg)](#-50-global-data-source-ingestion-pipelines)
 
-> An **industry-grade Future Market Predictor Platform** that continuously collects global data across 50 sources, detects weak signals, computes 14-dimensional trend scores, runs multi-model AI time-series predictions (6m, 1y, 3y, 5y, 10y), forecasts future workforce demand, discovers high-ROI startup opportunities, and powers a 10-agent AI swarm network.
+> An **industry-grade Future Market Predictor Platform** that continuously ingests global data across 50 sources, detects weak signals, computes 14-dimensional trend scores, runs multi-model AI time-series predictions (6m, 1y, 3y, 5y, 10y), forecasts future workforce demand, discovers high-ROI startup opportunities, and powers a 10-agent AI swarm network.
+
+![Future Market Predictor Platform Dashboard](docs/images/platform_dashboard_hero.png)
 
 ---
 
@@ -36,6 +38,9 @@ Every technology sector is continuously evaluated across 14 normalized quantitat
 14. **Overall Opportunity Score**
 
 ### 3. 🤖 10 Specialized Autonomous AI Agents
+
+![10-Agent Swarm Network](docs/images/ai_agent_swarm_network.png)
+
 - **AI Market Intelligence Agent**: Global tech & market scanner.
 - **Patent Intelligence Agent**: IP claims miner & prior-art analyzer.
 - **Research Intelligence Agent**: Academic paper & citation graph miner.
@@ -48,6 +53,9 @@ Every technology sector is continuously evaluated across 14 normalized quantitat
 - **Business Opportunity Agent**: Market gap & B2B/B2C SaaS matrix generator.
 
 ### 4. 🎮 AI War-Gaming & Macroeconomic Scenario Simulator
+
+![War Games AI Scenario Simulator](docs/images/war_games_scenario_simulator.png)
+
 - Run "What-If" macroeconomic and technological shock scenarios (*AGI Breakthrough 2027*, *Commercial Fusion Power Grid 2030*, *Quantum RSA-2048 Threat*).
 - Calculates real-time CAGR deltas, workforce impact vectors, portfolio hedges, and enterprise playbooks.
 
@@ -67,6 +75,9 @@ Every technology sector is continuously evaluated across 14 normalized quantitat
 - Adjust reasoning depth (`Standard`, `Deep Research`, `Exhaustive Graph Mining`) and inspect real-time agent execution trace trees.
 
 ### 9. 🌐 Global Innovation Hubs Geospatial Heatmap
+
+![Global Innovation Hubs Heatmap](docs/images/global_innovation_heatmap.png)
+
 - Ecosystem breakdown of top global tech capitals (**San Francisco**, **Shenzhen**, **London**, **Bengaluru**, **Munich**, **Tel Aviv**).
 - Tracks VC flow YTD, ecosystem scores, patent filing velocity, and feeder universities.
 
