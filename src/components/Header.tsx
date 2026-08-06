@@ -11,7 +11,8 @@ import {
   Network, 
   FileText, 
   Database,
-  Cpu
+  Cpu,
+  Globe
 } from 'lucide-react';
 
 export type ActiveTab = 
