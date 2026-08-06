@@ -9,6 +9,7 @@ import { Header, ActiveTab } from './components/Header';
 import { DashboardOverview } from './components/DashboardOverview';
 import { TechExplorer } from './components/TechExplorer';
 import { ScenarioSimulatorView } from './components/ScenarioSimulatorView';
+import { PatentMinerView } from './components/PatentMinerView';
 import { FutureJobsDashboard } from './components/FutureJobsDashboard';
 import { BusinessOpportunityDashboard } from './components/BusinessOpportunityDashboard';
 import { InvestmentIntelligence } from './components/InvestmentIntelligence';
@@ -105,6 +106,10 @@ export function App() {
           <ScenarioSimulatorView
             onRunSimulation={handleRunSimulation}
           />
+        )}
+
+        {activeTab === 'patent-radar' && (
+          <PatentMinerView />
         )}
 
         {activeTab === 'future-jobs' && (
